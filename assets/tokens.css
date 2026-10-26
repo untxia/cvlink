@@ -1,0 +1,39 @@
+/* CVlink — jetons de design (charte graphique v1.0). Source de vérité des couleurs et polices. */
+:root {
+  /* Marque */
+  --cvl-blue: #2f7fba;         /* losange du logo */
+  --cvl-navy: #232a6b;         /* mot-symbole « CV · LINK » */
+  --cvl-orange: #d85b15;       /* petit losange séparateur — usage décoratif uniquement */
+
+  /* Interface (thème clair) */
+  --bg: #eef1f3;
+  --surface: #ffffff;
+  --surface-2: #f6f8f9;
+  --ink: #17232e;
+  --muted: #5a6877;
+  --line: #d5dce2;
+  --accent: #1f6aa5;           /* liens, boutons, focus */
+  --accent-ink: #ffffff;
+  --accent-soft: #dcebf7;
+  --wordmark: #232a6b;
+  --ok: #1a7f4b;   --ok-soft: #d9f0e3;
+  --warn: #9a5b00; --warn-soft: #fbe9c8;
+  --demo: #b42318;             /* étiquette « Démo · CV fictifs » */
+
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f171e; --surface: #17212b; --surface-2: #1d2935; --ink: #e8eef3; --muted: #9aa8b6;
+    --line: #2b3a48; --wordmark: #e8eef3; --accent: #6db4ea; --accent-ink: #06233a; --accent-soft: #14304a;
+    --ok: #5fd39a; --ok-soft: #153a2a; --warn: #f0b95a; --warn-soft: #3d2d10; --demo: #ff8a7e;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f171e; --surface: #17212b; --surface-2: #1d2935; --ink: #e8eef3; --muted: #9aa8b6;
+  --line: #2b3a48; --wordmark: #e8eef3; --accent: #6db4ea; --accent-ink: #06233a; --accent-soft: #14304a;
+  --ok: #5fd39a; --ok-soft: #153a2a; --warn: #f0b95a; --warn-soft: #3d2d10; --demo: #ff8a7e;
+}

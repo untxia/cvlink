@@ -1,0 +1,18 @@
+# Journal des modifications
+
+Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/). Versionnage : [SemVer](https://semver.org/lang/fr/).
+
+## [Non publié]
+
+## [0.1.0] — 2026-10-26
+
+Premier dépôt : prototype de démonstration avec CV fictifs.
+
+### Ajouté
+- Page autonome `app/index.html` : liste de candidats, recherche, filtre par poste, bloc de mailing (Poste · Candidat · Profil · Disponibilité) copiable dans Outlook.
+- Fiche CV résumée au clic sur un prénom : prénom seul, sans coordonnées ni employeurs.
+- 6 CV fictifs en PDF (`app/cv/`), noms de fichiers opaques.
+- Assistant IA « préparer un candidat » : fiche anonymisée depuis un CV brut, détection de numéros et d'e-mails oubliés.
+- Assistant IA « demande de recruteur » : sélection de 5 profils au plus, rayon de 20 km maximum calculé par le code.
+- Identité visuelle : logo 3D (icône flottante animée), jetons de design, charte graphique.
+- Documentation : architecture, assistant IA, RGPD, questions pour Tempo, feuille de route.

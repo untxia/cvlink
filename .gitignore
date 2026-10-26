@@ -1,0 +1,24 @@
+# Données réelles : ne jamais versionner de CV ni d'export de candidats
+data/
+exports/
+cv-reels/
+imports/
+*.csv
+*.xlsx
+*.xls
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+# Divers
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+dist/
+build/
