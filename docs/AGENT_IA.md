@@ -24,10 +24,10 @@ Après la réponse, le code **assainit** la fiche : bornes de longueur, valeurs 
 
 ## 2. Répondre à une demande de recruteur
 
-**Entrée :** demande en texte libre + lieu + rayon (≤ 20 km).
+**Entrée :** demande en texte libre + lieu + rayon (réglable ; plafonné à 20 km dans le prototype).
 **Étapes :**
 
-1. Le **code** filtre les candidats du rayon (jamais l'IA).
+1. Le **code** filtre les candidats du rayon et de l'organisation (jamais l'IA).
 2. L'IA reçoit uniquement ces fiches nettoyées.
 3. Elle propose **5 profils au plus**, du plus au moins adapté, avec `adequation` (`Forte` / `Possible`) et une `raison` d'une phrase.
 4. Le **code** vérifie que chaque identifiant renvoyé existe dans la liste examinée, supprime les doublons, limite à 5.
@@ -43,7 +43,7 @@ Après la réponse, le code **assainit** la fiche : bornes de longueur, valeurs 
 
 - Le texte du CV et la demande sont encadrés (`<cv>…</cv>`, `<demande>…</demande>`, `<candidats>…</candidats>`) et déclarés comme **données**.
 - La réponse est du JSON strict, validé côté code ; toute réponse invalide est rejetée.
-- Aucune action n'est déclenchée par l'IA (pas d'envoi d'e-mail, pas d'écriture dans Tempo).
+- Aucune action n'est déclenchée par l'IA (pas d'envoi d'e-mail, pas d'écriture dans le logiciel source des CV).
 
 ## Passage à Grok (xAI)
 
@@ -55,7 +55,7 @@ Le format d'entrée et de sortie ne change pas. Seul l'appel change : au lieu de
 
 Avant la mise en service, constituer un **jeu de test** (CV fictifs + demandes) et mesurer :
 - l'absence de fuite d'identité dans les fiches (zéro toléré) ;
-- le respect du rayon (zéro toléré) ;
+- le respect du rayon et du cloisonnement entre organisations (zéro toléré) ;
 - la pertinence des profils proposés, jugée par deux recruteurs.
 
 Les règles de l'assistant sont aussi décrites dans [`skills/preparation-cv-mailing/SKILL.md`](../skills/preparation-cv-mailing/SKILL.md).

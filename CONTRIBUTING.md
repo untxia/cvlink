@@ -2,7 +2,7 @@
 
 ## Règles d'or
 
-1. **Aucune donnée réelle dans le dépôt.** Ni CV, ni export de Tempo, ni capture d'écran avec de vrais noms. Utiliser les CV fictifs de `app/cv/`.
+1. **Aucune donnée réelle dans le dépôt.** Ni CV, ni export d'un logiciel de candidatures, ni capture d'écran avec de vrais noms. Utiliser les CV fictifs de `app/cv/`.
 2. **Aucun secret dans le dépôt** (clés d'API, mots de passe, jetons). Utiliser des variables d'environnement ; fournir un `.env.example` sans valeurs.
 3. **Les règles d'affichage sont non négociables** : prénom seul, pas de coordonnées, pas d'employeur ([README](README.md)).
 4. **Le code fait les contrôles stricts** (distance, anonymisation, droits) ; **l'IA classe et rédige**.

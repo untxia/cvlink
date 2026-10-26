@@ -5,7 +5,7 @@ description: Prépare une fiche candidat anonymisée (prénom, poste, expérienc
 
 # Préparation d'une fiche candidat pour un mailing
 
-Contexte : agence d'intérim (Work 2000). Les CV viennent de Tempo. Le but est de produire, pour chaque candidat proposé, une fiche courte et anonymisée à insérer dans un mailing « Sélection exclusive de profils » envoyé à des recruteurs.
+Contexte : société RH, cabinet de recrutement ou agence d'emploi. Le but est de produire, pour chaque candidat proposé, une fiche courte et anonymisée à insérer dans un mailing de présentation de profils envoyé à des entreprises qui recrutent.
 
 ## Règles de confidentialité (impératives)
 - Ne garder que le **prénom**. Jamais le nom de famille.
@@ -25,10 +25,10 @@ Contexte : agence d'intérim (Work 2000). Les CV viennent de Tempo. Le but est d
 8. **alerte** : signaler toute donnée personnelle restée dans le texte ou toute incertitude (dates floues, dispo inconnue)
 
 ## Choix des profils à proposer
-Quand on doit sélectionner parmi plusieurs candidats pour une demande de recruteur : privilégier l'adéquation au poste (compétences, habilitations, expérience pertinente), puis la disponibilité. Respecter le **rayon maximal de 20 km** (calculé par le code, pas par l'IA). Expliquer brièvement le choix.
+Quand on doit sélectionner parmi plusieurs candidats pour une demande de recruteur : privilégier l'adéquation au poste (compétences, habilitations, expérience pertinente), puis la disponibilité. Respecter le **rayon maximal** fixé pour la mission (calculé par le code, pas par l'IA). Expliquer brièvement le choix.
 
 ## Sortie
 Fiche en JSON, puis ligne du bloc de mailing : Poste | Prénom | Profil (expérience · points forts) | Disponibilité.
 
 ## Avant envoi
-Toujours faire relire par un recruteur de l'agence : l'IA peut se tromper sur les durées ou la disponibilité. Envoi final depuis Outlook, validé par un humain.
+Toujours faire relire par un recruteur : l'IA peut se tromper sur les durées ou la disponibilité. Envoi final depuis la messagerie du recruteur, validé par un humain.

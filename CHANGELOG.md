@@ -4,6 +4,12 @@ Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/). Ver
 
 ## [Non publié]
 
+### Modifié
+- CVlink devient un produit indépendant destiné aux sociétés RH, cabinets de recrutement et agences d'emploi.
+- Nouvelle identité visuelle (charte v2.0) : tuile indigo, « CV » indigo, « LINK » turquoise.
+- Textes et documentation rendus génériques (plus de référence à un client ou un logiciel précis).
+- Guide des intégrations (`docs/INTEGRATIONS.md`) à la place des questions propres à un logiciel.
+
 ## [0.1.0] — 2026-10-26
 
 Premier dépôt : prototype de démonstration avec CV fictifs.
@@ -15,4 +21,4 @@ Premier dépôt : prototype de démonstration avec CV fictifs.
 - Assistant IA « préparer un candidat » : fiche anonymisée depuis un CV brut, détection de numéros et d'e-mails oubliés.
 - Assistant IA « demande de recruteur » : sélection de 5 profils au plus, rayon de 20 km maximum calculé par le code.
 - Identité visuelle : logo 3D (icône flottante animée), jetons de design, charte graphique.
-- Documentation : architecture, assistant IA, RGPD, questions pour Tempo, feuille de route.
+- Documentation : architecture, assistant IA, RGPD, intégrations, feuille de route.

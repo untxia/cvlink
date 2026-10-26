@@ -1,9 +1,10 @@
-/* CVlink — jetons de design (charte graphique v1.0). Source de vérité des couleurs et polices. */
+/* CVlink — jetons de design (charte graphique v2.0). Source de vérité des couleurs et polices. */
 :root {
   /* Marque */
-  --cvl-blue: #2f7fba;         /* losange du logo */
-  --cvl-navy: #232a6b;         /* mot-symbole « CV · LINK » */
-  --cvl-orange: #d85b15;       /* petit losange séparateur — usage décoratif uniquement */
+  --cvl-indigo: #4f46e5;       /* tuile du logo, « CV » */
+  --cvl-indigo-deep: #1e1b4b;  /* mot-symbole sur fond clair */
+  --cvl-teal: #14b8a6;         /* « LINK » — décoratif uniquement (2,5:1 sur blanc) */
+  --cvl-teal-text: #0f766e;    /* turquoise utilisable pour du texte (5,5:1 sur blanc) */
 
   /* Interface (thème clair) */
   --bg: #eef1f3;
@@ -12,10 +13,10 @@
   --ink: #17232e;
   --muted: #5a6877;
   --line: #d5dce2;
-  --accent: #1f6aa5;           /* liens, boutons, focus */
+  --accent: #4338ca;           /* liens, boutons, focus */
   --accent-ink: #ffffff;
-  --accent-soft: #dcebf7;
-  --wordmark: #232a6b;
+  --accent-soft: #e0e7ff;
+  --wordmark: #1e1b4b;
   --ok: #1a7f4b;   --ok-soft: #d9f0e3;
   --warn: #9a5b00; --warn-soft: #fbe9c8;
   --demo: #b42318;             /* étiquette « Démo · CV fictifs » */
@@ -28,12 +29,12 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0f171e; --surface: #17212b; --surface-2: #1d2935; --ink: #e8eef3; --muted: #9aa8b6;
-    --line: #2b3a48; --wordmark: #e8eef3; --accent: #6db4ea; --accent-ink: #06233a; --accent-soft: #14304a;
+    --line: #2b3a48; --wordmark: #e8eef3; --accent: #a5b4fc; --accent-ink: #1e1b4b; --accent-soft: #26235c;
     --ok: #5fd39a; --ok-soft: #153a2a; --warn: #f0b95a; --warn-soft: #3d2d10; --demo: #ff8a7e;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0f171e; --surface: #17212b; --surface-2: #1d2935; --ink: #e8eef3; --muted: #9aa8b6;
-  --line: #2b3a48; --wordmark: #e8eef3; --accent: #6db4ea; --accent-ink: #06233a; --accent-soft: #14304a;
+  --line: #2b3a48; --wordmark: #e8eef3; --accent: #a5b4fc; --accent-ink: #1e1b4b; --accent-soft: #26235c;
   --ok: #5fd39a; --ok-soft: #153a2a; --warn: #f0b95a; --warn-soft: #3d2d10; --demo: #ff8a7e;
 }
