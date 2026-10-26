@@ -82,6 +82,7 @@ CVLink/
 │   ├── ARCHITECTURE.md       Cible technique et flux de données
 │   ├── AGENT_IA.md           Rôle, règles et prompts de l'assistant
 │   ├── RGPD.md               Données personnelles, risques, mesures
+│   ├── APPRENTISSAGE.md      Comment CVlink s'améliore, société par société
 │   ├── FORMATS_CV.md         Lire tous les formats de CV (PDF, scans, HTML, ATS…)
 │   ├── INTEGRATIONS.md       Brancher CVlink aux logiciels de candidatures
 │   └── FEUILLE_DE_ROUTE.md   Étapes

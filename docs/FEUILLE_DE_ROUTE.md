@@ -28,6 +28,10 @@
 - [ ] Jeu de test et évaluation (zéro fuite d'identité, zéro sortie du rayon, zéro mélange entre organisations).
 - [ ] Journalisation des demandes (sans CV complet).
 
+- [ ] Journal des événements (profil gardé, retiré, envoyé, entretien, placement) par société — voir [`APPRENTISSAGE.md`](APPRENTISSAGE.md).
+- [ ] Glossaire des métiers et fiches clients par société.
+- [ ] Recherche hybride (sens + mots-clés) et vérification critère par critère avec citation du CV.
+
 ## Étape 4 — Pilote
 - [ ] Liens de fiches privés, avec expiration, pour les destinataires externes.
 - [ ] Marque blanche : logo et coordonnées de l'organisation dans le bloc de mailing.

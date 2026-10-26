@@ -22,6 +22,29 @@
 6. **Relecture humaine** : le recruteur valide ou change la sélection.
 7. **Bloc de mailing** : tableau HTML en styles en ligne. Les liens pointent vers la fiche CV résumée, hébergée en privé.
 
+## Choix techniques recommandés (à valider par un jeu de test)
+
+| Brique | Choix | Alternative |
+|---|---|---|
+| Base | **PostgreSQL + pgvector** (hébergement UE, par exemple Supabase) : filtres, recherche par mots-clés et par sens dans une seule base, droits par organisation | Base vectorielle dédiée si le volume l'exige |
+| Recherche | **Hybride** (sens + mots-clés) puis reclassement | Recherche par mots-clés seule au départ |
+| Embeddings | Modèle **multilingue** auto-hébergé (par exemple BGE-M3) : aucun CV ne sort | Service d'embeddings en UE sous contrat |
+| Agent | **Un seul agent à enchaînement fixe** avec 4 outils : chercher, lire un profil, vérifier un critère, rédiger | Cadre d'agents si les besoins grandissent |
+| Modèle de langage | **Grok (xAI)** derrière une couche remplaçable, comparé à 1 ou 2 autres (dont un modèle hébergé en Europe) | — |
+| Code | Python ou TypeScript simple, sorties validées par schémas (Pydantic, Zod) | — |
+
+Le modèle se choisit sur un **jeu de test** de 30 à 50 demandes avec les profils que des recruteurs auraient retenus. Un modèle moins cher peut extraire les CV ; un modèle plus fort vérifie les critères. Les conditions des fournisseurs et les versions de modèles changent vite : les revérifier au moment du choix.
+
+## Déroulé de l'agent
+
+1. **Comprendre la demande** : critères obligatoires (habilitation, rayon, date) et souhaitables ; question au recruteur s'il manque l'essentiel.
+2. **Filtres stricts (code)** : rayon, disponibilité, organisation.
+3. **Recherche (RAG)** : une vingtaine de profils par sens + mots-clés, sur les profils nettoyés.
+4. **Vérification** : chaque critère noté *oui / non / à confirmer*, avec la phrase du CV qui le prouve.
+5. **Proposition** : 5 profils au plus avec la raison, puis bloc de mailing relu par le recruteur.
+
+L'amélioration au fil de l'usage est décrite dans [`APPRENTISSAGE.md`](APPRENTISSAGE.md).
+
 ## Décisions et raisons
 
 - **La distance est calculée par le code, pas par l'IA** : le rayon est une règle absolue, une IA peut se tromper ou être influencée par le texte d'un CV.
