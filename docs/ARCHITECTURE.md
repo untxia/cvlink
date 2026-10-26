@@ -14,7 +14,7 @@
 
 ## Flux de données cible
 
-1. **Import** (planifié, par organisation) : lecture de la source, extraction du texte des PDF (OCR si scanné), **géocodage de l'adresse** avec la Base Adresse Nationale, stockage des **coordonnées** pour la recherche.
+1. **Import** (planifié, par organisation) : lecture de la source, **extraction de tout format de CV** vers un profil unique (voir [`FORMATS_CV.md`](FORMATS_CV.md)), **géocodage de l'adresse** avec la Base Adresse Nationale, stockage des **coordonnées** pour la recherche.
 2. **Demande** : le recruteur saisit le poste, le lieu, la disponibilité.
 3. **Filtre dur (code)** : candidats de l'organisation dans le rayon et disponibles.
 4. **Nettoyage (code)** : suppression du nom de famille, de l'adresse, du téléphone, de l'e-mail et des noms d'employeurs avant tout envoi à l'IA.

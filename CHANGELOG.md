@@ -4,6 +4,9 @@ Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/). Ver
 
 ## [Non publié]
 
+### Ajouté
+- `docs/FORMATS_CV.md` : lecture de tous les formats de CV (PDF, scans, Word, HTML, CV interactifs, exports d'ATS), profil canonique, sécurité à l'entrée.
+
 ### Modifié
 - CVlink devient un produit indépendant destiné aux sociétés RH, cabinets de recrutement et agences d'emploi.
 - Nouvelle identité visuelle (charte v2.0) : tuile indigo, « CV » indigo, « LINK » turquoise.

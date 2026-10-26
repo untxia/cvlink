@@ -47,7 +47,8 @@ Présenter des candidats prend du temps et se fait mal :
 | Fiche CV résumée au clic sur un prénom | Prototype |
 | Assistant : préparer la fiche d'un candidat depuis un CV brut | Prototype (via l'IA de Claude) |
 | Assistant : répondre à une demande, filtre de distance (20 km maximum dans le prototype) | Prototype (via l'IA de Claude) |
-| Import des CV depuis un logiciel de gestion (fichiers, export, API) | À faire — voir [intégrations](docs/INTEGRATIONS.md) |
+| Lecture de tous les formats de CV : PDF, scans (OCR), Word, HTML, CV interactifs, exports d'ATS | À faire — voir [formats](docs/FORMATS_CV.md) (le prototype lit du texte collé) |
+| Import depuis un logiciel de gestion (fichiers, export, API) | À faire — voir [intégrations](docs/INTEGRATIONS.md) |
 | Géocodage des adresses (Base Adresse Nationale) | À faire |
 | Serveur avec l'API Grok (xAI) | À faire |
 | Comptes, organisations, liens de fiches privés | À faire |
@@ -81,6 +82,7 @@ CVLink/
 │   ├── ARCHITECTURE.md       Cible technique et flux de données
 │   ├── AGENT_IA.md           Rôle, règles et prompts de l'assistant
 │   ├── RGPD.md               Données personnelles, risques, mesures
+│   ├── FORMATS_CV.md         Lire tous les formats de CV (PDF, scans, HTML, ATS…)
 │   ├── INTEGRATIONS.md       Brancher CVlink aux logiciels de candidatures
 │   └── FEUILLE_DE_ROUTE.md   Étapes
 ├── skills/

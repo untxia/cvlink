@@ -13,9 +13,12 @@
 - [ ] Revue RGPD ([`RGPD.md`](RGPD.md)) : rôles, contrat de sous-traitance, prestataire d'IA.
 
 ## Étape 2 — Socle serveur
+(Les formats de CV à lire, et l'ordre de mise en œuvre, sont dans [`FORMATS_CV.md`](FORMATS_CV.md).)
 - [ ] Hébergement UE, base PostgreSQL, cloisonnement par organisation.
 - [ ] Authentification, rôles (administrateur, recruteur).
-- [ ] Import de fichiers (CSV + PDF), extraction du texte (OCR si besoin), géocodage (Base Adresse Nationale).
+- [ ] Lecture des CV : PDF texte, texte, Markdown, HTML, puis Word et OCR (scans, images), puis JSON Resume, Europass et exports d'ATS, puis pages web et CV interactifs.
+- [ ] Profil canonique, score de confiance, file de vérification, détection de texte caché.
+- [ ] Import de fichiers (CSV + PDF), géocodage (Base Adresse Nationale).
 - [ ] Nettoyage automatique (nom, adresse, téléphone, e-mail, employeurs) avec tests.
 - [ ] Interface connectée à la base à la place des données du prototype.
 

@@ -2,6 +2,8 @@
 
 CVlink doit s'adapter à l'outil où vivent déjà les CV du client : logiciel de gestion d'intérim ou de recrutement (ATS), système RH, dossier partagé.
 
+Les formats de fichiers acceptés (PDF, scans, Word, HTML, CV interactifs, exports d'ATS) sont décrits dans [`FORMATS_CV.md`](FORMATS_CV.md).
+
 ## Scénarios, du plus simple au plus intégré
 
 1. **Import de fichiers** (démarrage recommandé) : un dossier de CV en PDF + un fichier CSV listant les candidats (identifiant, poste, compétences, disponibilité, code postal ou adresse). Fonctionne avec n'importe quel logiciel qui sait exporter.
