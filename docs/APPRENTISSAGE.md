@@ -84,3 +84,8 @@ Par société, mois après mois :
 - **zéro** fuite d'identité et **zéro** mélange entre sociétés (tests permanents).
 
 Comparer toujours à un **groupe de référence** (même demande traitée sans apprentissage) avant d'affirmer qu'une amélioration vient de l'apprentissage.
+
+
+## Démonstration dans le prototype
+
+Le prototype (`app/index.html`) montre la boucle sans entraînement : retours Garder/Retirer avec motif, glossaire validé par un humain, journal visible. Ces données sont réinjectées dans la demande suivante. Mémorisation locale au navigateur uniquement ; en production : base par société, isolée.

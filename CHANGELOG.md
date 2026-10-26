@@ -2,6 +2,13 @@
 
 Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/). Versionnage : [SemVer](https://semver.org/lang/fr/).
 
+## [Non publié] — Apprentissage par société (démo)
+
+- Boutons Garder / Retirer sur chaque profil proposé, avec motif structuré (métier, habilitation, disponibilité, expérience, autre).
+- Critères vérifiés par profil : Oui / Non / À confirmer, avec la phrase du CV comme preuve.
+- Journal d'apprentissage visible (proposés, gardés, retirés, ajoutés à la main) et taux de profils gardés.
+- Glossaire des métiers : équivalences ajoutées à la main ou proposées par l'agent puis validées par un humain ; réinjectées dans les demandes suivantes.
+
 ## [Non publié]
 
 ### Ajouté
