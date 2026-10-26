@@ -22,3 +22,9 @@ Thumbs.db
 .idea/
 dist/
 build/
+
+# Serveur
+server/node_modules/
+server/dist/
+server/.env
+*.tsbuildinfo
