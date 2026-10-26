@@ -77,11 +77,12 @@ L'extraction manipule des CV **complets** : elle s'exécute côté serveur CVlin
 ## Mise en œuvre progressive
 
 1. **Livré dans le prototype :** coller le texte d'un CV (aucun fichier).
-2. **Prochaine étape :** PDF avec texte, texte, Markdown, HTML.
-3. Puis : Word, OCR des PDF scannés et des images.
-4. Puis : JSON Resume, Europass, exports d'ATS (premiers connecteurs).
-5. Puis : pages web et CV interactifs (navigateur sans interface), e-mails.
-6. Plus tard : transcription de CV vidéo.
+2. **Fait (`server/src/cv/`) :** PDF avec texte, texte, Markdown, HTML, JSON Resume ; réception sûre, score de confiance, détection de texte caché. Limites : voir [`server/README.md`](../server/README.md).
+3. **Prochaine étape :** texte → profil canonique avec un modèle de langage.
+4. Puis : Word, OCR des PDF scannés et des images.
+5. Puis : Europass, exports d'ATS (premiers connecteurs).
+6. Puis : pages web et CV interactifs (navigateur sans interface), e-mails.
+7. Plus tard : transcription de CV vidéo.
 
 ## Jeu de test
 
