@@ -5,6 +5,7 @@ Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/). Ver
 ## [Non publié]
 
 ### Ajouté
+- Section « Apprendre de chaque CV reçu » dans `docs/APPRENTISSAGE.md`.
 - `docs/APPRENTISSAGE.md` : apprentissage par société (base, glossaire, fiches clients, journal d'événements), étanchéité, biais, mesure.
 - Choix techniques recommandés et déroulé de l'agent dans `docs/ARCHITECTURE.md`.
 - `docs/FORMATS_CV.md` : lecture de tous les formats de CV (PDF, scans, Word, HTML, CV interactifs, exports d'ATS), profil canonique, sécurité à l'entrée.

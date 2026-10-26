@@ -17,6 +17,25 @@ On ne modifie pas le modèle d'IA. Il apprend à travers ce qui l'entoure : la b
 | **La rédaction** | Textes validés ou corrigés par le recruteur | Exemples de la société réutilisés dans le prompt (apprentissage « par l'exemple », sans entraînement). |
 | **Les critères de vérification** | Corrections du recruteur (« non, ce n'est pas équivalent ») | Règles propres à la société, ajoutées au prompt de vérification. |
 
+## Apprendre de chaque CV reçu (en continu)
+
+À chaque nouveau CV (import, e-mail, dépôt, connecteur), la société enrichit sa base sans intervention :
+
+| Ce qui est tiré du CV | Effet |
+|---|---|
+| **Le profil** | Extraction vers le profil unique, indexation : le candidat est trouvable immédiatement. |
+| **Les termes et métiers nouveaux** | Un terme qui revient souvent (par exemple « conducteur de PEMP » à côté de « cariste ») est proposé comme entrée de glossaire ; **un humain valide**. |
+| **Les statistiques du vivier** | Profils par métier, habilitations rares, répartition géographique : le recruteur voit ce qui manque avant de répondre à un client. |
+| **La qualité de lecture** | Les corrections faites sur un CV mal lu servent d'exemples pour les formats semblables. |
+| **Les doublons et mises à jour** | Un CV plus récent d'une même personne remplace l'ancien. |
+
+**Limite à garder en tête :** un CV dit ce que la personne sait faire, pas si elle est un bon choix pour une mission. Savoir *qui convient* vient des retours (gardé, retiré, entretien, placement), pas des CV seuls.
+
+**Ce qu'on ne fait pas :**
+- Entraîner un modèle sur les CV : les candidats n'y ont pas consenti et on ne pourrait plus les en retirer.
+- Garder la trace d'un candidat dans le comportement de l'IA : ses données restent dans la base, où on peut les effacer.
+- Mélanger les CV de plusieurs sociétés.
+
 ## Journal des événements (par société)
 
 Chaque étape laisse une trace, sans CV complet :
